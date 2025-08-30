@@ -1,0 +1,33 @@
+/* CSS básico para el header y enlaces */
+header {
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+header a:hover {
+    text-decoration: underline;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+

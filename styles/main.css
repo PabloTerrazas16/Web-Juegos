@@ -1,0 +1,51 @@
+/* Navbar superpuesta sobre el banner */
+.navbar {
+  background: rgba(33, 37, 41, 0.95); /* semitransparente, pero sin posición absoluta */
+  border-bottom: 1px solid #222;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(270deg, #19582d, #21285b, rgb(52, 17, 90), #00ff95);
+  background-size: 800% 800%;
+  animation: animacionTest 20s ease infinite;
+}
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: 50vh; /* Ocupa el 50% de la altura de la ventana */
+  overflow: hidden;
+  background: red;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%; /* antes 150%, ahora encaja exacto */
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.5);
+}
+
+.banner-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 3rem;
+  z-index: 2;
+}
+
+#main-btn:hover{
+
+transform: scale(1.1);
+transition: all 0.3s ease-in-out;
+
+}
