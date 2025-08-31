@@ -1,3 +1,10 @@
+#title{
+  color: red;
+  -webkit-text-stroke: 2px aqua;
+}
+
+
+
 /* Navbar superpuesta sobre el banner */
 .navbar {
   background: rgba(33, 37, 41, 0.95); /* semitransparente, pero sin posición absoluta */
@@ -7,9 +14,9 @@
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(270deg, #19582d, #21285b, rgb(227, 12, 12), #00ff95);
+  background: linear-gradient(270deg, #1f6134d8, #263761, rgb(96, 73, 120), #6fffc3);
   background-size: 800% 800%;
-  animation: animacionTest 20s ease infinite;
+  animation: animacionTest 30s ease infinite;
 }
 
 .banner-container {
@@ -49,3 +56,6 @@ transform: scale(1.1);
 transition: all 0.3s ease-in-out;
 
 }
+
+
+
