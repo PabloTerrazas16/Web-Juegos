@@ -10,12 +10,13 @@ function loginUser() {
     if (user) {
         localStorage.setItem("loggedUserEmail", user.email);
         alert("Login exitoso");
-        window.location.href = "../main.html";
+        window.location.href = "../index.html";
         return false;
     } else {
         alert("Usuario o contraseña incorrectos.");
         return false;
     }
+
 }
 
 // Conectar al formulario

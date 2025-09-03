@@ -1,4 +1,6 @@
 // Lista de usuarios válidos para login y registro (simulación)
+
+
 window.validUsers = [
 	{
 		username: "Diego S.",
@@ -10,6 +12,6 @@ window.validUsers = [
 		username: "Pablo T.",
 		email: "pablo.t@duocuc.cl",
 		password: "pablot456",
-	    profilePic: "../media/pablo.png"
+	    profilePic: "../media/pablo.jpg"
 	}
 ];

@@ -1,0 +1,31 @@
+{
+  "name": "web-juegos",
+  "version": "1.0.0",
+  "description": "El pepe",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PabloTerrazas16/Web-Juegos.git"
+  },
+  "keywords": [
+    "Webpage",
+    "Shop",
+    "Games",
+    "Game",
+    "Shop",
+    "Sex",
+    "Shop",
+    "Sex",
+    "Toys"
+  ],
+  "author": "Yo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PabloTerrazas16/Web-Juegos/issues"
+  },
+  "homepage": "https://github.com/PabloTerrazas16/Web-Juegos#readme"
+}
