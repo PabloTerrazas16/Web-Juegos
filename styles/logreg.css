@@ -2,9 +2,10 @@ main {
 	max-width: 400px;
 	margin: 40px auto;
 	padding: 24px;
-	background: #fff;
-	border-radius: 8px;
-	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	background: linear-gradient(135deg, #23272f 60%, #2d2a4a 100%);
+	border-radius: 18px;
+	box-shadow: 0 6px 32px rgba(44, 22, 80, 0.25);
+	border: 1px solid #312e81;
 }
 
 
@@ -20,16 +21,33 @@ main {
 h1 {
 	text-align: center;
 	margin-bottom: 24px;
+	color: #a78bfa;
 }
 
 form {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
+	margin-top: 12px;
 }
 
 .form-label {
 	font-weight: bold;
+	color: #e0e0e0;
+input[type="text"], input[type="password"], input[type="email"] {
+	background: #181a20;
+	color: #e0e0e0;
+	border: 1px solid #7c3aed;
+	border-radius: 8px;
+	padding: 10px;
+	font-size: 1rem;
+	margin-bottom: 8px;
+	transition: border-color 0.2s;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+	border-color: #a78bfa;
+	outline: none;
+}
 }
 
 
@@ -38,17 +56,21 @@ form {
 
 .btn-primary:hover {
 	width: 100%;
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
+	background: #7c3aed !important;
+	color: #e0e0e0 !important;
+	border: 1px solid #a78bfa !important;
+	transform: scale(1.05);
+	transition: all 0.3s ease-in-out;
 }
 
 a {
 	display: block;
 	text-align: center;
 	margin-top: 12px;
-	color: #007bff;
+	color: #a78bfa;
 	text-decoration: none;
 }
 a:hover {
 	text-decoration: underline;
+	color: #7c3aed;
 }

@@ -1,20 +1,71 @@
+
+.card {
+  background: linear-gradient(135deg, #23272f 60%, #2d2a4a 100%);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(44, 22, 80, 0.25);
+  border: 1px solid #312e81;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.25);
+  border-color: #7c3aed;
+}
+
+.card-img-top {
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  object-fit: cover;
+  height: 220px;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-body, .banner-text, .navbar, body, .container, .card-title, .card-text {
+  color: #e0e0e0 !important;
+}
+
+.card-title, .mb-2 strong {
+  color: #a78bfa !important;
+}
+
+.mb-2 .text-success {
+  color: #22c55e !important;
+}
 #title{
-  color: red;
-  -webkit-text-stroke: 2px aqua;
+  color: #e0e0e0;
+  -webkit-text-stroke: 2px #23272f;
 }
 
-
-
-/* Navbar superpuesta sobre el banner */
 .navbar {
-  background: rgba(33, 37, 41, 0.95); /* semitransparente, pero sin posición absoluta */
-  border-bottom: 1px solid #222;
+background: rgba(23, 26, 33, 0.97) !important;
+border-bottom: 1px solid #23272f !important;
+min-height: 64px;
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;
+box-shadow: 0 2px 8px rgba(44, 22, 80, 0.10);
 }
+
+
 
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(270deg, #1f6134d8, #263761, rgb(96, 73, 120), #6fffc3);
+  background: linear-gradient(120deg, #181a20 0%, #23272f 60%, #23272f 100%);
   background-size: 800% 800%;
   animation: animacionTest 30s ease infinite;
 }
@@ -22,17 +73,17 @@ body {
 .banner-container {
   position: relative;
   width: 100%;
-  height: 50vh; /* Ocupa el 50% de la altura de la ventana */
+  height: 50vh; 
   overflow: hidden;
-  background: red;
+  background: #23272f;
 }
 
 .banner-img {
   width: 100%;
-  height: 100%; /* antes 150%, ahora encaja exacto */
+  height: 100%; 
   object-fit: cover;
   object-position: center;
-  filter: brightness(0.5);
+  filter: brightness(0.4) contrast(1.1);
 }
 
 .banner-text {
@@ -41,7 +92,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  color: #fff;
+  color: #e0e0e0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,11 +101,17 @@ body {
   z-index: 2;
 }
 
-#main-btn:hover{
-
-transform: scale(1.1);
-transition: all 0.3s ease-in-out;
-
+.btn-success, .btn-primary, #main-btn {
+  background: #7c3aed !important; 
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.15);
 }
 
-
+#main-btn:hover, .btn-success:hover, .btn-primary:hover {
+  background: #4c1d95 !important;
+  color: #e0e0e0 !important;
+  border-color: transparent;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}

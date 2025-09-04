@@ -1,4 +1,3 @@
-// Muestra en la navbar la foto de perfil si el usuario está logeado, o el mensaje si no
 function actualizarNavbarUsuario() {
 	const navbarUser = document.getElementById('navbar-user');
 	if (!navbarUser) return;
@@ -48,7 +47,6 @@ function actualizarNavbarUsuario() {
 }
 
 window.addEventListener('DOMContentLoaded', actualizarNavbarUsuario);
-/* En este archivo van las funciones principales de la web, para cosas menores o especificas, favor crear otro archivo */
 
 
 

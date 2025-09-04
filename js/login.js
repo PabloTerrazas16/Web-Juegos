@@ -1,4 +1,3 @@
-// Simulación de login usando los usuarios de validUsers.js
 function loginUser() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
@@ -19,7 +18,6 @@ function loginUser() {
 
 }
 
-// Conectar al formulario
 window.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('form');
     if (form) {
